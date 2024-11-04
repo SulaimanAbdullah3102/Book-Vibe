@@ -1,9 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
 
 const Root = () => {
     return (
         <div>
-            <h1>Hello from root</h1>
+            <Nav></Nav>
+            <div className="max-w-7xl mx-auto">
+            <Outlet></Outlet>
+            <Footer></Footer>
+            </div>
         </div>
     );
 };
